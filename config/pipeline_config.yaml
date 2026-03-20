@@ -16,7 +16,7 @@ pipeline:
   error_threshold: 0.05
 
 database:
-  connection_string: "postgresql://etl_user:${DB_PASSWORD}@localhost:5432/trade_db"
+  connection_string: "${DATABASE_URL}"  # e.g. postgresql://user:pass@host:5432/dbname
   pool_size: 10
   max_overflow: 20
   pool_timeout: 30
